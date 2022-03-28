@@ -1,0 +1,7 @@
+{
+  "name": "iPet",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
