@@ -24,3 +24,38 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+@import "./theme/variables.scss";
+
+//definindo o plano de fundo para todas as paginas
+body {
+    background-color: #E6E8E3;
+    
+}
+
+ion-content {
+    padding: 0 20px;
+}
+//estilo para o input
+.input {
+    width: 317px;
+    height: 56px;
+    background: #F1F5F4;
+    border-radius: 29px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    .native-input {
+        padding: 20px;
+
+    }
+}
+
+//estilo para  os botoes
+.button {
+    &.button-main{
+        display: block;
+        margin: 0 auto;
+        background-color: #1CA39E;
+        width: 317px;
+        height: 56px;
+    }
+}
