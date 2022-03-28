@@ -74,6 +74,32 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /*cores personalizadas*/
+
+  /** branco **/ 
+  --ion-color-white2: #F1F5F4;
+	--ion-color-white2-rgb: 241,245,244;
+	--ion-color-white2-contrast: #000000;
+	--ion-color-white2-contrast-rgb: 0,0,0;
+	--ion-color-white2-shade: #d4d8d7;
+	--ion-color-white2-tint: #f2f6f5;
+
+  /** verde **/
+  --ion-color-green: #1CA39E;
+	--ion-color-green-rgb: 28,163,158;
+	--ion-color-green-contrast: #ffffff;
+	--ion-color-green-contrast-rgb: 255,255,255;
+	--ion-color-green-shade: #198f8b;
+	--ion-color-green-tint: #33aca8;
+  /** cinza **/
+  --ion-color-light-grey: #E6E8E3;
+	--ion-color-light-grey-rgb: 230,232,227;
+	--ion-color-light-grey-contrast: #000000;
+	--ion-color-light-grey-contrast-rgb: 0,0,0;
+	--ion-color-light-grey-shade: #caccc8;
+	--ion-color-light-grey-tint: #e9eae6;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -233,4 +259,39 @@
 
     --ion-card-background: #1e1e1e;
   }
+
+
+  /*
+  * Cores personalizadas
+  * --------------------------------------------
+  */
+
+  .ion-color-white2 {
+    --ion-color-base: var(--ion-color-white2);
+    --ion-color-base-rgb: var(--ion-color-white2-rgb);
+    --ion-color-contrast: var(--ion-color-white2-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-white2-contrast-rgb);
+    --ion-color-shade: var(--ion-color-white2-shade);
+    --ion-color-tint: var(--ion-color-white2-tint);
+  }
+
+  .ion-color-green {
+    --ion-color-base: var(--ion-color-green);
+    --ion-color-base-rgb: var(--ion-color-green-rgb);
+    --ion-color-contrast: var(--ion-color-green-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-green-contrast-rgb);
+    --ion-color-shade: var(--ion-color-green-shade);
+    --ion-color-tint: var(--ion-color-green-tint);
+  }
+
+
+  .ion-color-light-grey {
+    --ion-color-base: var(--ion-color-light-grey);
+    --ion-color-base-rgb: var(--ion-color-light-grey-rgb);
+    --ion-color-contrast: var(--ion-color-light-grey-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-light-grey-contrast-rgb);
+    --ion-color-shade: var(--ion-color-light-grey-shade);
+    --ion-color-tint: var(--ion-color-light-grey-tint);
+  }
+
 }
