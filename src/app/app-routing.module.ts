@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'criar-conta',
     loadChildren: () => import('./criar-conta/criar-conta.module').then( m => m.CriarContaPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   }
 ];
 
