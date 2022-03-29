@@ -62,9 +62,17 @@ ion-content {
         margin: 0 auto;
         width: 317px;
         height: 56px;
-            
+        border-radius: 29px;
     }
 }
 .button-solid {
     --background: #1CA39E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }   
+
+//estilo para a logo
+
+.app-logo {
+    display: block;
+    margin: 0 auto;
+}
