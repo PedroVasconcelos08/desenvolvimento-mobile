@@ -28,12 +28,18 @@
 
 //definindo o plano de fundo para todas as paginas
 body {
-    background-color: #E6E8E3;
+    
     
 }
 
+.main {
+    --ion-background-color: #E6E8E3;    
+}
+
+
 ion-content {
     padding: 0 20px;
+    
 }
 //estilo para o input
 .input {
@@ -54,8 +60,11 @@ ion-content {
     &.button-main{
         display: block;
         margin: 0 auto;
-        background-color: #1CA39E;
         width: 317px;
         height: 56px;
+            
     }
 }
+.button-solid {
+    --background: #1CA39E;
+}   

@@ -1,5 +1,7 @@
 @import "../../global.scss";
 
+
+
 .app-logo {
     display: block;
     margin: 0 auto;
@@ -23,7 +25,9 @@
     align-items: center;
     margin-bottom: 40px;
     margin-top: 30px;
-    
+    p {
+        color:#a0a0a0
+    }
 }
 
 .mr-100 {
