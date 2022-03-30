@@ -2,10 +2,15 @@
 ion-card {
     display: flex;
     background-color: #71DBD2;
+    height: 103px;
     color: #fff;
     ion-card-title {
         color: #fff;
 
+    }
+    img {
+        max-width: 128px;
+        height: 103px;
     }
     .card-content {
         margin-left: 20px;
@@ -16,5 +21,36 @@ ion-card {
             display: flex;
             align-items: baseline;
         }
+    }
+}
+
+.animais-nav {
+    display: flex;
+    justify-content: center;
+    ion-button {
+        border-radius: 29px;
+        &.unselected {
+            &.button-solid {
+                --background: #F1F5F4;
+            }
+        }
+    }
+}
+
+//estilo para o footer
+ion-footer {
+    background: #F1F5F4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 65px;
+    border-top-left-radius:13px;
+    border-top-right-radius:13px;    
+    margin-top: -10px;
+
+
+    ion-button {
+        --background: transparent;
+        box-shadow: none;
     }
 }
