@@ -27,10 +27,6 @@
 @import "./theme/variables.scss";
 
 //definindo o plano de fundo para todas as paginas
-body {
-    
-    
-}
 
 .main {
     --ion-background-color: #E6E8E3;    
@@ -75,4 +71,22 @@ ion-content {
 .app-logo {
     display: block;
     margin: 0 auto;
+}
+
+//estilo para o footer
+ion-footer {
+    background: #F1F5F4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 65px;
+    border-top-left-radius:13px;
+    border-top-right-radius:13px;    
+    margin-top: -10px;
+
+
+    ion-button {
+        --background: transparent;
+        box-shadow: none;
+    }
 }
