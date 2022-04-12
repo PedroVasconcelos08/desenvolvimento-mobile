@@ -1,28 +1,37 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>home</ion-title>
-    <ion-button routerLink="/login"><</ion-button>
+    <ion-title></ion-title>
+    <ion-icon routerLink="/login" size="large" name="chevron-back"></ion-icon>
+    <!--<ion-button routerLink="/login"></ion-button>-->
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="main">
   <img class="app-logo" src="../../assets/icon/icon-dog.png" alt="">
   <ion-iten class="animais-nav">
+
     <ion-button>
-      <img src="../../assets/icon/icon-dog2.png" alt="">
+      <img src="../../assets/icon/dog.svg" alt="">
     </ion-button>
+
     <ion-button class="unselected">
-      <img src="../../assets/icon/icon-cat.png" alt="">
+      <img src="../../assets/icon/cat5.svg" alt="">
     </ion-button>
+
     <ion-button class="unselected">
-      <img src="../../assets/icon/icon-bird.png" alt="">
+      <img src="../../assets/icon/bird.svg" alt="">
     </ion-button>
+
     <ion-button class="unselected">
-      <img src="../../assets/icon/icon-bunny.png" alt="">
+      <img src="../../assets/icon/hamster.svg" alt="">
     </ion-button>
+
+
     <ion-button class="unselected">
-      <img src="../../assets/icon/icon-hamster.png" alt="">
+      <img src="../../assets/icon/bunny.svg" alt="">
     </ion-button>
+
+    
     
   </ion-iten>
   <ion-iten class="card-container">
@@ -71,16 +80,9 @@
 </ion-content>
 
 <ion-footer>
-  <ion-button>
-    <img src="../../assets/icon/icon-coracao.png" alt="">
-  </ion-button>
-  <ion-button>
-    <img src="../../assets/icon/icon-send.png" alt="">
-  </ion-button>
-  <ion-button routerLink="/pesquisa">
-    <img src="../../assets/icon/icon-adotar.png" alt="">
-  </ion-button>
-  <ion-button>
-    <img src="../../assets/icon/icon-user.png" alt="">
-  </ion-button>
+    <ion-icon class="icon-heart" size="large" name="heart" ></ion-icon>
+    <ion-icon class="icon-send" size="large" name="send"></ion-icon>
+    <ion-icon routerLink="/adocao" class="icon-paw" size="large" name="paw"></ion-icon>
+    <ion-icon routerLink="/usuario" class="icon-person" size="large" name="person"></ion-icon>
+
 </ion-footer>

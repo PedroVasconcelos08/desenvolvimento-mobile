@@ -22,6 +22,14 @@ const routes: Routes = [
   {
     path: 'pesquisa',
     loadChildren: () => import('./pesquisa/pesquisa.module').then( m => m.PesquisaPageModule)
+  },
+  {
+    path: 'adocao',
+    loadChildren: () => import('./adocao/adocao.module').then( m => m.AdocaoPageModule)
+  },
+  {
+    path: 'usuario',
+    loadChildren: () => import('./usuario/usuario.module').then( m => m.UsuarioPageModule)
   }
 ];
 
