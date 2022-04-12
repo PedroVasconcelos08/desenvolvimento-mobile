@@ -1,4 +1,10 @@
+ion-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 ion-card {
     border-radius: 19px;
     background-color: #F18809;
+    max-height:125px ;
 }

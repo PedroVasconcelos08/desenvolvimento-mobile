@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Animais } from '../models/animais.model';
+import { AdocaoService } from '../services/adocao.service';
 
 @Component({
   selector: 'app-pesquisa',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PesquisaPage implements OnInit {
 
-  constructor() { }
+  public animais: Array<Animais> = [];
+
+  constructor(private adocaoService:AdocaoService) { }
 
   ngOnInit() {
+    this.animais = this.adocaoService.getAll();
   }
 
 }

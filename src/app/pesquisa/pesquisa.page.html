@@ -7,35 +7,14 @@
 <ion-content>
   <ion-searchbar placeholder="pesquisar"></ion-searchbar>
 
-  <ion-item>
+  <ion-item class="card-container">
     <ion-grid>
-      <ion-row>
-        <ion-col>
-          <ion-card>
-            <img src="../../assets/images/dog.png" alt="">
-          </ion-card>
-          <ion-card>
-            <img src="../../assets/images/dog.png" alt="">
-          </ion-card>
-          <ion-card>
-            <img src="../../assets/images/dog.png" alt="">
-          </ion-card>
-        </ion-col>
-        <ion-col>
-          <ion-card>
-            <img src="../../assets/images/dog.png" alt="">
-          </ion-card>
-          <ion-card>
-            <img src="../../assets/images/dog.png" alt="">
-          </ion-card>
-          <ion-card>
-            <img src="../../assets/images/dog.png" alt="">
-          </ion-card>
-        </ion-col>
-      </ion-row>
-     
+      <ion-col>
+        <ion-card *ngFor="let obj of animais">
+          <img [src]="obj.foto" alt="">
+        </ion-card>
+      </ion-col>
     </ion-grid>
    
-    
   </ion-item>
 </ion-content>
