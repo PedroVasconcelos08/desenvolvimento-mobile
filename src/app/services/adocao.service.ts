@@ -59,4 +59,35 @@ export class AdocaoService {
   public getAll(): Array<Animais> {
     return this.animais;
   }
+
+  public get(id: number): Animais {
+    for(let obj of this.animais) {
+      if (id === obj.id) {
+        return obj;
+      }
+    }
+
+    return new Animais();
+  }
+
+  public add(Animais: Animais) {
+    Animais.id = this.animais.length;
+    this.animais.push(Animais);
+  }
+
+  public edit(Animais: Animais) {
+    for(let obj of this.animais) {
+      if (Animais.id === obj.id) {
+        obj.id = Animais.id;
+        obj.foto = Animais.foto;
+        obj.especie = Animais.especie;
+        obj.genero = Animais.genero;
+        obj.raca = Animais.raca;
+        obj.endereco = Animais.endereco;
+        obj.motivo = Animais.motivo;
+        break;
+      }
+    }
+  }
+
 }
